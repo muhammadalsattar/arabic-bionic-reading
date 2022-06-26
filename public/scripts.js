@@ -3,6 +3,9 @@ const resultDiv = document.getElementById('result');
 document.querySelector('#create').addEventListener('click', function(e) {
     e.preventDefault();
     const text = document.querySelector('textarea').value;
+    if(text.length === 0) {
+        return
+    }
     fetch('/generate', {
         method: 'POST',
         headers: {
@@ -13,6 +16,7 @@ document.querySelector('#create').addEventListener('click', function(e) {
     .then(res => res.json())
     .then(data => {
         document.querySelector('#download').disabled = false;
+        resultDiv.innerHTML = '';
         data.pages.map((page, index) => {
             const div = document.createElement('div');
             div.className = 'page';
