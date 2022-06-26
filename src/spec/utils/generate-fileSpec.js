@@ -11,6 +11,6 @@ describe('generateFile', () => {
         expect(result).toBeUndefined();
     });
     it('Should generate a file with the given template', () => {
-        expect(existsSync(path.join(process.cwd() ,'/Arabic-bionic-text.html'))).toBe(true);
+        expect(existsSync(path.join(process.cwd() ,'public/arabic-bionic-text.html'))).toBe(true);
     });
 });

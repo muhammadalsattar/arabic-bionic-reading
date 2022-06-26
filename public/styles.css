@@ -1,47 +1,156 @@
 /* general styles */
 body{
     font-family: 'Noto Sans Arabic', sans-serif;
-    width: 75%;
+    color: #2d3436 !important;
+    width: 100%;
     margin: auto;
     text-align: right;
     font-weight: 300;
 }
 
-textarea{
-    height: 25vh !important;
-}
-
-.page{
-    background-color: #fff;
-    border-radius: .2em;
-    padding: 1em;
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    box-shadow: 0px 0px 4px #000;
-    height: max-content;
-}
-
-.page p {
-    color: #1B2430;
-    line-height: 1.5em;
-    font-size: 1.5em;
-}
-
 b{
     font-weight: 500 !important;
-
 }
 
+/* github div */
+.github {
+    width: 5em;
+}
+
+/* Header styles */
+#header {
+    width: 85vw;
+    text-align: right;
+}
+
+#header h1 {
+    font-weight: 300;
+    font-size: 6em;
+    line-height: 1em;
+}
+
+#header h1 b {
+    color: #e17055;
+}
+
+/* Comparison styles */
+#comparison {
+    width: 85vw;
+    margin: 4em auto;
+    text-align: right;
+}
+
+#comparison .card {
+    background-color: #ffeaa7;
+}
+.card-title {
+    font-size: 1.8em !important;
+    line-height: 1.5em !important;
+    font-weight: 300 !important;
+}
+
+/* hr styles */
+hr{
+    width: 70vw;
+    margin: 4em auto;
+}
+
+/* Transform form styles */
+#transform-form{
+    width: 85vw;
+    text-align: right;
+}
+
+#transform-form textarea{
+    height: 25vh !important;
+    border: none !important;
+    margin: 1.5em 0 !important;
+    padding: 1.5em !important;
+}
+
+#transform-form textarea:focus{
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+#transform-form #create {
+    padding: .5em !important;
+    font-size: 1.3em !important;
+}
+
+#transform-form #create:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* Generated styles */
+#generated {
+    width: 85vw;
+    margin: 4em auto;
+    text-align: center;
+}
+
+#generated button {
+    color: #fdcb6e !important;
+    text-decoration: underline !important;
+    background-color: transparent !important;
+    border: none !important;
+    outline: none !important;
+}
+
+#generated button:focus{
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+#generated a {
+    color: #e17055 !important;
+    text-decoration: underline !important;
+}
+
+#generated a:focus{
+    color: #e17055 !important;
+    text-decoration: underline !important;
+}
+
+#generated a:hover{
+    color: #e17055 !important;
+    text-decoration: underline !important;
+}
+
+/* footer styles */
+#footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* small screens */
 @media screen and (max-width: 600px) {
-    body {
-        width: 95%;
+    #header h1 {
+        font-size: 4em;
     }
-    .page{
+    #comparison .card {
         width: 100%;
     }
-    .page p {
-        font-size: 1.2em;
+    #comparison .card-title {
+        font-size: 1.5em !important;
+        line-height: 1.5em !important;
+        font-weight: 300 !important;
+    }
+    #transform-form textarea {
+        margin: .5em 0 !important;
+    }
+    #transform-form #create {
+        padding: .5em !important;
+        font-size: 1em !important;
+        margin: .5em 0 !important;
+    }
+    #generated {
+        width: 95vw;
     }
 }
 

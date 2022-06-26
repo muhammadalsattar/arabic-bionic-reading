@@ -1,15 +1,4 @@
-const template = (pages) => {
-    let pageDivs = '';
-    pages.forEach((page, index) => {
-        pageDivs +=`
-        <div class="page">
-            <p>${page}</p>
-            <p style="text-align: center;">${index + 1}</p>
-        </div>
-        <hr/>
-        `
-    })
-    return `
+
     <!DOCTYPE html>
     <html lang="ar" dir="rtl">
     <head>
@@ -23,23 +12,21 @@ const template = (pages) => {
         <style>
             body {
                 width: 90%;
-                color: #2d3436 !important;
                 margin: auto auto;
                 font-weight: 300;
-                margin-bottom: 2em !important;
-                background-color: #FCFFE7;
-            }
-            hr{
-                width: 70vw;
-                margin: 1em auto;
             }
             .page {
                 height: max-content;
+                box-shadow: 0 0 0.2em #000;
+                border-radius: 0.3em;
                 padding: 0.5em;
+                background-color: #fff;
+                color: #000;
                 margin: 1em 0;
             }
             p {
                 font-family: 'Noto Sans Arabic', sans-serif;
+                color: #1B2430;
                 margin: 1em;
                 text-align: right;
                 font-size: 1.5em;
@@ -62,10 +49,12 @@ const template = (pages) => {
         </style>
     </head>
     <body>
-        ${pageDivs}
+        
+        <div class="page">
+            <p><b>ه</b>ل <b>تع</b>لم <b>أ</b>ن <b>عق</b>لك <b>يق</b>رأ <b>أس</b>رع <b>م</b>ن <b>عين</b>ك؟ </p>
+            <p style="text-align: center;">1</p>
+        </div>
+        
     </body>
     </html>
-    `
-}
-
-export default template;
+    
