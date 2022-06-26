@@ -5,9 +5,9 @@
   "main": "script.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon app.js",
-    "start": "node app.js"
+    "test": "jasmine --config=spec/support/jasmine.json",
+    "dev": "nodemon src/app.js",
+    "start": "node src/app.js"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +17,9 @@
     "hbs": "^4.2.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.16"
+    "jasmine": "^4.2.1",
+    "jasmine-spec-reporter": "^7.0.0",
+    "nodemon": "^2.0.16",
+    "supertest": "^6.2.3"
   }
 }

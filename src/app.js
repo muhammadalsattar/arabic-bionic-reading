@@ -13,8 +13,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(process.cwd(), '/public')));
 app.set('view engine', 'hbs');
-app.set('views', path.join(process.cwd(), '/views'));
-hbs.registerPartials(path.join(process.cwd(), '/views/partials/template'));
+app.set('views', path.join(process.cwd(), '/src/views'));
+hbs.registerPartials(path.join(process.cwd(), '/src/views/partials/template'));
 
 
 app.get('/', (req, res) => {
@@ -35,5 +35,7 @@ app.post('/generate', (req, res) => {
 
 
 app.listen(port, () => {
-    console.log('Server is running on port 3000');
+    console.log(`Server is running on port: ${port}`);
 });
+
+export default app;
