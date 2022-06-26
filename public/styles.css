@@ -33,3 +33,15 @@ b{
 
 }
 
+@media screen and (max-width: 600px) {
+    body {
+        width: 95%;
+    }
+    .page{
+        width: 100%;
+    }
+    .page p {
+        font-size: 1.2em;
+    }
+}
+
