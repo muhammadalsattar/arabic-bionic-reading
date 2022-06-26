@@ -1,0 +1,35 @@
+/* general styles */
+body{
+    font-family: 'Noto Sans Arabic', sans-serif;
+    width: 75%;
+    margin: auto;
+    text-align: right;
+    font-weight: 300;
+}
+
+textarea{
+    height: 25vh !important;
+}
+
+.page{
+    background-color: #fff;
+    border-radius: .2em;
+    padding: 1em;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 4px #000;
+    height: max-content;
+}
+
+.page p {
+    color: #1B2430;
+    line-height: 1.5em;
+    font-size: 1.5em;
+}
+
+b{
+    font-weight: 500 !important;
+
+}
+
