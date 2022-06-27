@@ -23,7 +23,7 @@ app.get('/', (req, res) => {
 
 
 app.get('/download', (req, res) => {
-    res.download('./Arabic-bionic-text.html', 'Arabic-bionic-text.html');
+    res.download('./public/arabic-bionic-text.html', 'Arabic-bionic-text.html');
 });
 
 app.post('/generate', (req, res) => {
