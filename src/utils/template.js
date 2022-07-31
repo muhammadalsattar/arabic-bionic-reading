@@ -4,9 +4,8 @@ const template = (pages) => {
         pageDivs +=`
         <div class="page">
             <p>${page}</p>
-            <p style="text-align: center;">${index + 1}</p>
+            <p style="text-align: center; font-size: .9em">${index + 1}</p>
         </div>
-        <hr/>
         `
     })
     return `
@@ -30,12 +29,8 @@ const template = (pages) => {
                 margin: auto auto;
                 font-weight: 300;
                 margin-bottom: 2em !important;
-                background-color: #FCFFE7;
             }
-            hr{
-                width: 70vw;
-                margin: 1em auto;
-            }
+
             .page {
                 height: max-content;
                 padding: 0.5em;
@@ -46,7 +41,7 @@ const template = (pages) => {
                 margin: 1em;
                 text-align: right;
                 font-size: 1.5em;
-                line-height: 1.5em;
+                line-height: 1.8em;
             }
             b {
                 font-weight: 500 !important;

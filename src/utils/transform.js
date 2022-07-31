@@ -5,7 +5,7 @@ const transform = (text) => {
     for (let i = 0; i < textArray.length; i++) {
         let len = Math.ceil(textArray[i].length/2)
         bionicText += textArray[i].slice(0, len).bold() + textArray[i].slice(len) + " ";
-        if(bionicText.length >= 4000)
+        if(bionicText.length >= 2500 && bionicText.charAt(bionicText.length-2) === ".")
         {
             outputArray.push(bionicText);
             bionicText = '';
