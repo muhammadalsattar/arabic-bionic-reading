@@ -2,9 +2,9 @@ import path from 'path';
 import express from 'express';
 import hbs from 'hbs'
 
-import transform from './utils/transform.js';
-import template from './utils/template.js';
-import generateFile from './utils/generate-file.js';
+import transform from './src/utils/transform.js';
+import template from './src/utils/template.js';
+import generateFile from './src/utils/generate-file.js';
 
 const app = express();
 const port = process.env.PORT || 3000;

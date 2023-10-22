@@ -6,8 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "jasmine --config=spec/support/jasmine.json",
-    "dev": "nodemon src/app.js",
-    "start": "node src/app.js"
+    "dev": "nodemon index.js",
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
