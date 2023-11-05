@@ -1,6 +1,6 @@
 import path from 'path';
 import express from 'express';
-import hbs from 'hbs'
+import hbs from 'hbs';
 
 import transform from './src/utils/transform.js';
 import template from './src/utils/template.js';
@@ -16,11 +16,9 @@ app.set('view engine', 'hbs');
 app.set('views', path.join(process.cwd(), '/src/views'));
 hbs.registerPartials(path.join(process.cwd(), '/src/views/partials/template'));
 
-
 app.get('/', (req, res) => {
     res.render('main');
 });
-
 
 app.get('/download', (req, res) => {
     res.download('./public/arabic-bionic-text.html', 'Arabic-bionic-text.html');
@@ -30,12 +28,9 @@ app.post('/generate', (req, res) => {
     const pages = transform(req.body.text);
     const HTMLTemplate = template(pages);
     generateFile(HTMLTemplate);
-    res.send({pages});
+    res.send({ pages });
 });
-
 
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);
 });
-
-export default app;
